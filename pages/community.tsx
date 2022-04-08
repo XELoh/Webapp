@@ -1,12 +1,12 @@
 import Navbar from "@components/navbar";
 
-export default function Home() {
+export default function Community() {
   return (
     <div className="main">
       <Navbar />
       
       <div className="content">
-        <h1>Home</h1>
+        <h1>Community</h1>
       </div>
     </div>
   );

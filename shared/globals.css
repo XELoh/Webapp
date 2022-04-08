@@ -1,0 +1,59 @@
+:root {
+  --page-background: #fff;
+  --page-text: #000;
+  --text-size: 13px
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--page-background);
+  color: var(--page-text);
+  overflow: hidden;
+}
+
+p {
+  font-size: var(--text-size);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+form {
+  font-size: var(--text-size);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #fff;
+  border: solid 1px #000;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.main {
+  height: 100vh;
+}
+
+.main > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Phone portrait mode */
+@media only screen and (min-width: 280px) and (max-width: 480px) and (orientation: portrait) {
+  html,
+  body {
+    overflow: auto;
+  }
+}
